@@ -125,7 +125,8 @@ class _MyHomePageState extends State<MyHomePage> {
           }
         });
         print('No of isolate added to database:$p');
-        // await DBHelper.instance.getPictures();
+
+        await DBHelper.instance.getPictures();
         await DBHelper.instance.getCount();
         print(iso.isEmpty);
         print(iso);
